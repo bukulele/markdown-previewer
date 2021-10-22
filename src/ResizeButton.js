@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function ResizeButton(props) {
+function ResizeButton({ onClick, icon }) {
   return (
-    <button onClick={props.changeWindowSize} className="resizeButton">
-      <FontAwesomeIcon icon={props.icon} />
+    <button onClick={onClick} className='resizeButton'>
+      <FontAwesomeIcon icon={icon} />
     </button>
   );
 }
