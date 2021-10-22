@@ -98,12 +98,20 @@ body {
 }
 
 .window .markedArea pre, .bigger-window .markedArea pre,
+.window .markedArea code,
+.bigger-window .markedArea code,
 .window .markedArea blockquote,
 .bigger-window .markedArea blockquote {
   background-color: #fcf9e6;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+
+.window .markedArea blockquote,
+.bigger-window .markedArea blockquote {
+  margin-left: 2rem;
 }
 
 

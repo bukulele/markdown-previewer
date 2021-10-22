@@ -1,36 +1,36 @@
-# Welcome to my React Markdown Previewer!
+# Welcome to Markdown Previewer!
 
-## This is a sub-heading...
+## This is a level-two sub-heading...
 
-### And here's some other cool stuff:
+### And here's level three one. See some other cool stuff:
 
-Heres some code, `<div></div>`, between 2 backticks.
+You can style the code blocks: `<div></div>` between 2 backticks.
 
 ````
 // this is multi-line code:
 
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '```' && lastLine == '```') {
-    return multiLineCode;
+function myExample(firstParam, lastParam) {
+  if (firstParam == '```' && lastParam == '```') {
+    return superCoolResult;
   }
 }
 ````
 
-You can also make text **bold**... whoa!
+You can also make text **bold**...
 Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
+Or even **_both!_**
+If you don't need some text just show it: ~~some unneeded text~~.
 
 There's also [links](https://www.freecodecamp.org), and
 
 > Block Quotes!
 
-And if you want to get really crazy, even tables:
+If you want to create a table there is nothing easier:
 
-| Wild Header      | Crazy Header    | Another Header?    |
-| ---------------- | --------------- | ------------------ |
-| Your content can | be here, and it | can be here....    |
-| And here.        | Okay.           | I think we get it. |
+| Header one       | Header two | One more Header  |
+| ---------------- | ---------- | ---------------- |
+| text-text        | data-data  | comment-comment  |
+| New line of text | More data  | and your comment |
 
 - And of course there are lists.
   - Some are bulleted.
@@ -39,6 +39,6 @@ And if you want to get really crazy, even tables:
 
 1. And there are numbered lists too.
 1. Use just 1s if you want!
-1. And last but not least, let's not forget embedded images:
+1. And let's not forget embedded images:
 
 ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)

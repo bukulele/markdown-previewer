@@ -96,9 +96,13 @@ p,
     /*styles of marked text*/
 
     pre,
+    code,
     blockquote {
       background-color: $main-color;
       width: fit-content;
+    }
+    blockquote {
+      margin-left: 2rem;
     }
 
     blockquote {
