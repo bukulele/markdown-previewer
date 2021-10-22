@@ -1,11 +1,11 @@
 import {
   faExpandArrowsAlt,
   faCompressArrowsAlt,
-} from '@fortawesome/free-solid-svg-icons';
-import ResizeButton from './ResizeButton';
+} from "@fortawesome/free-solid-svg-icons";
+import ResizeButton from "./ResizeButton";
 
 function Window(props) {
-  const style = props.isWindowFullScreen ? 'bigger-window' : 'window';
+  const style = props.isWindowFullScreen ? "bigger-window" : "window";
 
   return (
     <div className={style}>
