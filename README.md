@@ -11,6 +11,6 @@
 - Managing the mapping of windows by dynamically classNames changes
 - Adaptive design
 
-You can see my other projects on my [github account page](https://github.com/bukulele)
-
-Also, you can check my [FreeCodeCamp progress](https://www.freecodecamp.org/bukulele)
+> You can see my other projects on my [github account page](https://github.com/bukulele)
+> 
+> Also, you can check my [FreeCodeCamp progress](https://www.freecodecamp.org/bukulele)
