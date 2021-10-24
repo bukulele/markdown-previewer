@@ -38,8 +38,13 @@ function App() {
 
   const changeVisibility = (event) => {
     setVisibility(!visibility);
-    requestingWindow.current = event.currentTarget.parentNode.parentNode;
-    console.log(requestingWindow.current);
+    for (
+      let elem = event.currentTarget;
+      elem.className !== "content-box";
+      elem = elem.parentNode
+    ) {
+      requestingWindow.current = elem;
+    }
     setWindowClassName(visibility ? "invisible" : "window");
   };
 
@@ -53,7 +58,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log(requestingWindow.current.id);
     if (!visibility) requestingWindow.current.className = "bigger-window";
   }, [visibility]);
 
