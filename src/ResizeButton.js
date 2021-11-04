@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ResizeButton(props) {
-  const onClick = (event) => {
-    props.changeVisibility(event);
+  const onClick = () => {
+    props.changeVisibility();
     props.changeWindowSize();
   };
 

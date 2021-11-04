@@ -36,16 +36,13 @@ function App() {
     setMarkedText(cleanedInput);
   }
 
-  const changeVisibility = (event) => {
+  const changeVisibility = () => {
     setVisibility(!visibility);
-    for (
-      let elem = event.currentTarget;
-      elem.className !== "content-box";
-      elem = elem.parentNode
-    ) {
-      requestingWindow.current = elem;
-    }
     setWindowClassName(visibility ? "invisible" : "window");
+  };
+
+  const setRequestingWindow = (object) => {
+    requestingWindow.current = object.current;
   };
 
   useEffect(() => {
@@ -64,14 +61,14 @@ function App() {
   return (
     <div className="content-box">
       <Window
-        requestingWindow={requestingWindow}
+        setRequestingWindow={setRequestingWindow}
         className={windowClassName}
         changeVisibility={changeVisibility}
         titleName="Text to be marked"
         windowContent={<InputArea input={input} handleInput={handleInput} />}
       />
       <Window
-        requestingWindow={requestingWindow}
+        setRequestingWindow={setRequestingWindow}
         className={windowClassName}
         changeVisibility={changeVisibility}
         titleName="Marked result"

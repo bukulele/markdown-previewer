@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   faExpandArrowsAlt,
   faCompressArrowsAlt,
@@ -8,12 +8,15 @@ import ResizeButton from "./ResizeButton";
 function Window(props) {
   const [windowSizeIsSmall, setWindowSize] = useState(true);
 
+  const requestingWindow = useRef();
+
   function changeWindowSize() {
     setWindowSize(!windowSizeIsSmall);
+    props.setRequestingWindow(requestingWindow);
   }
 
   return (
-    <div className={props.className} id={props.id} ref={props.requestingWindow}>
+    <div className={props.className} id={props.id} ref={requestingWindow}>
       <div className="title-bar">
         <p>{props.titleName}</p>
         <ResizeButton
