@@ -1,0 +1,22 @@
+/*
+main-color: #fcf9e6;
+main-color-light: #fff3ce;
+accent-bright: #a62b2b;
+grey: #494949;
+*/
+
+.resizeButton {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  background-color: #fcf9e6;
+  color: #494949;
+  line-height: 100%;
+  text-align: center;
+  margin-right: 1rem;
+  margin-left: auto;
+}

@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import marked from "marked";
 import DOMPurify from "dompurify";
 import "./index.css";
-import Window from "./Window";
-import InputArea from "./InputArea";
-import MarkedArea from "./MarkedArea";
-import file from "./initialMarked.md";
+import Window from "./components/Window/Window";
+import InputArea from "./components/InputArea/InputArea";
+import MarkedArea from "./components/MarkedArea/MarkedArea";
+import file from "./assets/initialMarked.md";
 import hljs from "highlight.js";
 import "highlight.js/styles/default.css";
 
@@ -65,15 +65,17 @@ function App() {
         className={windowClassName}
         changeVisibility={changeVisibility}
         titleName="Text to be marked"
-        windowContent={<InputArea input={input} handleInput={handleInput} />}
-      />
+      >
+        <InputArea input={input} handleInput={handleInput} />
+      </Window>
       <Window
         setRequestingWindow={setRequestingWindow}
         className={windowClassName}
         changeVisibility={changeVisibility}
         titleName="Marked result"
-        windowContent={<MarkedArea markedText={markedText} />}
-      />
+      >
+        <MarkedArea markedText={markedText} />
+      </Window>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+/*
+main-color: #fcf9e6;
+main-color-light: #fff3ce;
+accent-bright: #a62b2b;
+grey: #494949;
+*/
+
+.markedArea {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  font-family: "Gowun Batang", serif;
+  color: #494949;
+  overflow-y: scroll;
+  background-color: #fff3ce;
+}
