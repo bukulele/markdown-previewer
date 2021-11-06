@@ -9,6 +9,7 @@ import MarkedArea from "./components/MarkedArea/MarkedArea";
 import file from "./assets/initialMarked.md";
 import hljs from "highlight.js";
 import "highlight.js/styles/default.css";
+import windowStyles from "./components/Window/Window.module.css";
 
 marked.setOptions({
   highlight: function (code) {
@@ -55,7 +56,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (!visibility) requestingWindow.current.className = "bigger-window";
+    if (!visibility)
+      requestingWindow.current.className = windowStyles.biggerWindow;
   }, [visibility]);
 
   return (
